@@ -11,42 +11,29 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    private var label : SKLabelNode?
-    private var spinnyNode : SKShapeNode?
+    var player: SKSpriteNode!
     
     override func didMove(to view: SKView) {
-        
+        physicsWorld.gravity = CGVector(dx: 0, dy: 0)
+        createPlayer()
     }
     
-    
-    func touchDown(atPoint pos : CGPoint) {
+    func createPlayer() {
+        player = SKSpriteNode(color: .red, size: CGSize(width: 5, height: 5))
+        player?.name = "player"
+        player?.position = CGPoint(x: frame.midX, y: frame.midY)
+        player?.physicsBody = SKPhysicsBody(circleOfRadius: 5)
+        player?.color = .red
         
+        addChild(player!)
     }
     
-    func touchMoved(toPoint pos : CGPoint) {
-        
-    }
-    
-    func touchUp(atPoint pos : CGPoint) {
-        
-    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
+        for touch in touches {
+            self.player.run(SKAction.move(to: touch.location(in: self), duration: 0.5))
+        }
     }
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-    }
-    
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-    }
-    
     
     override func update(_ currentTime: TimeInterval) {
         
