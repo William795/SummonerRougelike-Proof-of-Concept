@@ -21,6 +21,8 @@
 		92515008234BD6BF00CCE59A /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92515007234BD6BF00CCE59A /* PlayerController.swift */; };
 		9251500A234BD6C800CCE59A /* SummonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92515009234BD6C800CCE59A /* SummonController.swift */; };
 		9251500C234BD6D100CCE59A /* EnemyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9251500B234BD6D100CCE59A /* EnemyController.swift */; };
+		92DD5812234FDF1400B8EDF6 /* ZPositions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD5811234FDF1400B8EDF6 /* ZPositions.swift */; };
+		92DD5815234FE00A00B8EDF6 /* PhysicsCategorys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD5814234FE00A00B8EDF6 /* PhysicsCategorys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		92515007234BD6BF00CCE59A /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
 		92515009234BD6C800CCE59A /* SummonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummonController.swift; sourceTree = "<group>"; };
 		9251500B234BD6D100CCE59A /* EnemyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyController.swift; sourceTree = "<group>"; };
+		92DD5811234FDF1400B8EDF6 /* ZPositions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZPositions.swift; sourceTree = "<group>"; };
+		92DD5814234FE00A00B8EDF6 /* PhysicsCategorys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsCategorys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 				92514FFD2347E1A900CCE59A /* Scenes */,
 				92515006234BD6A700CCE59A /* Models */,
 				925150012347E26E00CCE59A /* ModelController */,
+				92DD5813234FDF3100B8EDF6 /* Settings */,
 			);
 			path = SummonerRougeLikeProofOfConcept;
 			sourceTree = "<group>";
@@ -176,6 +181,15 @@
 				92515004234BD47200CCE59A /* EnemyModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		92DD5813234FDF3100B8EDF6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				92DD5811234FDF1400B8EDF6 /* ZPositions.swift */,
+				92DD5814234FE00A00B8EDF6 /* PhysicsCategorys.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +332,8 @@
 				925150002347E26300CCE59A /* PlayerModel.swift in Sources */,
 				9251500C234BD6D100CCE59A /* EnemyController.swift in Sources */,
 				92514FC92347E07500CCE59A /* AppDelegate.swift in Sources */,
+				92DD5815234FE00A00B8EDF6 /* PhysicsCategorys.swift in Sources */,
+				92DD5812234FDF1400B8EDF6 /* ZPositions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
