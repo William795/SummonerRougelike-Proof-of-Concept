@@ -13,6 +13,10 @@ class GameScene: SKScene {
     
     var player: SKSpriteNode!
     
+    var summon1: SKSpriteNode?
+    var summon2: SKSpriteNode?
+    var summon3: SKSpriteNode?
+    
     override func didMove(to view: SKView) {
         physicsWorld.contactDelegate = self
 //        physicsWorld.gravity = CGVector(dx: 0, dy: 0)
